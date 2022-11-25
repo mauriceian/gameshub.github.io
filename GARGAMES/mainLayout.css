@@ -1,0 +1,169 @@
+body {
+	margin: auto;
+	vertical-align: middle;
+
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+
+
+  	background-repeat: no-repeat;
+ 	background-attachment: fixed; 
+  	background-size: cover;
+}
+
+img {
+	position: absolute;
+}
+
+.container {
+	background-color: #FAF4F4;
+	border-radius: 30px;
+
+}
+
+ul {
+	list-style-type: none;
+}
+li {
+	padding: 10px;
+	font-size: 30px;
+}
+
+.btn {
+	margin: 5px;
+	border: 1px solid #666666;
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	border-radius:15px;
+
+	
+	background-color: white;
+  	color: #4CAF50;;
+  	border: 2px solid #4CAF50; /* Green */
+}
+
+.btn:hover {
+	background-color: #4CAF50;
+	color:white;
+}
+
+.btn:active {
+	background-color: #3e8e41;
+	transform: translateY(4px);
+}
+
+.arrow {
+	margin: 0;
+	color: white;
+}
+
+.arrow:disabled {
+	background-color: grey;
+}
+
+.arrow:enabled {
+	background-color: #4889f0;
+}
+
+#firstColumn,
+#mainColumn,
+#lastColumn {
+	margin: auto;
+	padding: 10px;
+}
+
+#firstColumn {
+	z-index: 3;
+}
+
+#gameTitle {
+	font-weight: bold;
+	color: red;
+	font-family:Arial, Arial, Helvetica, sans-serif;
+}
+
+#gameBoard {
+	/* border-width: 20px;
+	border-style: solid;
+	border-color:#ffe2b5;
+	border-radius: 30px; */
+	z-index: 1;
+	margin: auto;
+	width: 320px;
+	height: 320px;
+	table-layout: fixed;
+	position: relative;
+}
+
+#moveInput {
+	width: 50px;
+}
+
+#moveInput:hover,
+#moveInput:focus {
+	box-shadow: 0 0 5px blue;
+}
+
+#arrowContainer {
+	margin: 20px auto;
+}
+
+#canvas {
+	z-index: 10;
+	position: absolute;
+	top: 10px;
+	left: calc(50% - 160px);
+	opacity: 0.7;
+}
+
+#scoreLabel {
+	background-color: lightgrey;
+	width: 10em;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+}
+
+#cover {
+	z-index: 2;
+	position: absolute;
+	top: -500px;
+	left: calc(50% - 160px);
+	width: 320px;
+	height: 500px;
+}
+
+#newGame,
+#showMove {
+	width: 10em;
+}
+
+#DEBUG {
+	z-index: 100;
+	position: fixed;
+	top: 50px;
+	left: 25px;
+	background-color: #ff4d4d;
+	opacity: 0.85;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(0,66,75,255),rgba(0,66,75,255));
+    color: rgb(2, 42, 48);
+    text-align: center;
+ }
